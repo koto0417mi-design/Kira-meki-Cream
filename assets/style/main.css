@@ -1,0 +1,15 @@
+html {
+    font-size: calc(10 * 100vw / 390);
+}
+
+@media (min-width:768px) {
+    html {
+        font-size: calc(10 * 100vw / 1500);
+    }
+}
+
+@media (min-width: 1500px) {
+    html {
+        font-size: 62.5%;
+    }
+}
