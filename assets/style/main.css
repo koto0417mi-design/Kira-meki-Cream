@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/* ページ全体のスタイル
+------------------------------------------------------------------------ */
+html {
+    scroll-padding-top: 100px;
+    scroll-behavior: smooth;
+    font-size: calc(10 * 100vw / 390);
+}
+
+@media (min-width:768px) {
+    html {
+        font-size: calc(10 * 100vw / 1200);
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+body {
+    font-family: "Noto serif JP", "Marcellus", "EB Garamond", serif;
+    line-height: 1.75;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: baseline;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* ボタン 
+------------------------------------------------------------------------ */
+
+.btn {
+    position: relative;
+    display: block;
+    text-align: center;
+    border-radius: 25px;
+}
+
+
+/* フォント 
+------------------------------------------------------------------------ */
+
+.marcellus {
+    font-family: "Marcellus", serif;
+}
+
+.eb-garamond {
+    font-family: "EB Garamond", serif;
+}
+
+
+/* メイン 
+------------------------------------------------------------------------ */
+
+
+.cover {
+    background-image: url(../image/mainVisual_sp.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 45rem;
+    
+}
+
+@media (min-width: 768px) {
+    .cover {
+        background-image: url(../image/mainVisual_pc.jpg);
+        width: 100%;
+        height: 57rem;
+    }
+}
+
+.cover-container {
+    background-size: 100% 45rem;
+    background-position: top left;
+}
+
+@media (min-width: 768px) {
+    .cover-container {
+    padding: 0;
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .cover-container {
+        max-width: 75rem;
+    }
+}
+
+
+
+
+
+
+
+
+.scroll-top {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.scroll-top {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 27px;
+    position: sticky;
+    bottom: 10px;
+    left: 0;
+}
