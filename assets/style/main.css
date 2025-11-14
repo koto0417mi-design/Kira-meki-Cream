@@ -17,6 +17,7 @@ html {
 @media (min-width: 1200px) {
     html {
         font-size: 62.5%;
+        font-weight: 400;
     }
 }
 
@@ -41,7 +42,7 @@ li {
 }
 
 
-/* 共通スタイル
+/* ボタン
 ------------------------------------------------------------------------ */
 
 .btn {
@@ -49,7 +50,9 @@ li {
     height: 45px;
     display: block;
     text-align: center;
-    border-radius: 25px;
+    border-radius: 34px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 /* フォント 
@@ -68,20 +71,29 @@ li {
 ------------------------------------------------------------------------ */
 
 .header {
-    position: relative;
-    
-   
+    position: absolute;
+    top: 3%;
+    left: 53%;
+    transform: translateX(-50%);
 }
 
 @media (min-width: 768px) {
-.header {
-    font-size: 1.75rem;
+    .header {
+        position: fixed;
+        top: 3.5%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
-.header-text {
-    position: absolute;
- font-size: 1.563rem;
+.header-logo {
+    width: 86%;
+}
+
+@media (min-width: 768px) {
+    .header-logo {
+        width: 100%;
+    }
 }
 
 .main {
@@ -89,7 +101,7 @@ li {
     background-size: cover;
     width: 100%;
     height: 45rem;
-    
+
 }
 
 @media (min-width: 768px) {
@@ -107,8 +119,8 @@ li {
 
 @media (min-width: 768px) {
     .main-container {
-    max-width: 46.75rem;
-    padding: 0;
+        max-width: 46.75rem;
+        padding: 0;
 
     }
 }
@@ -118,6 +130,154 @@ li {
         max-width: 75rem;
     }
 }
+
+.main-text {
+    position: absolute;
+    top: 48%;
+    left: 5%;
+}
+
+@media (min-width: 768px) {
+    .main-text {
+        top: 48%;
+        left: 5%;
+    }
+}
+
+.main-text-up {
+    font-size: 41px;
+}
+
+@media (min-width: 768px) {
+    .main-text-up {
+        font-size: 50px;
+    }
+}
+
+.main-text-down {
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    .main-text-down {
+        font-size: 25px;
+    }
+}
+
+
+.cart {
+    padding: 20px 10px;
+}
+
+@media (min-width: 768px) {
+    .cart {
+        padding: 25px 0;
+        margin: auto;
+    }
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    color: #f0f4ff;
+}
+
+@media (min-width: 768px) {
+    .cart-container {
+        flex-direction: row;
+    }
+}
+
+.cart-text {
+    text-align: center;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .name {
+        font-size: 24px;
+        font-weight: 600;
+    }
+}
+
+.price {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    .price {
+        font-size: 16px;
+    }
+}
+
+.hamburger-nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.btn-hero {
+    width: 350px;
+    height: 65px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #fff;
+    color: #005bac;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 33px;
+    transition: all 0.3s ease;
+}
+
+.site-btn {
+    background-color: #46c4db;
+    color: #fff;
+}
+
+
+
+
+.buy-btn {
+    background-color: #5dd5ab;
+    color: #fff;
+    border: 2px solid #5dd5ab;
+}
+
+.buy-btn:hover {
+    background-color: #fff;
+    color: #5dd5ab;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
