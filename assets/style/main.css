@@ -3,7 +3,6 @@
 /* ページ全体のスタイル
 ------------------------------------------------------------------------ */
 html {
-    scroll-padding-top: 100px;
     scroll-behavior: smooth;
     font-size: calc(10 * 100vw / 390);
 }
@@ -17,12 +16,11 @@ html {
 @media (min-width: 1200px) {
     html {
         font-size: 62.5%;
-        font-weight: 400;
     }
 }
 
 body {
-    font-family: "Noto serif JP", "Marcellus", "EB Garamond", serif;
+    font-family: "Noto serif JP", serif;
     line-height: 1.75;
     color: #000;
 }
@@ -34,7 +32,7 @@ a {
 img {
     max-width: 100%;
     height: auto;
-    vertical-align: baseline;
+    vertical-align: bottom;
 }
 
 li {
@@ -42,211 +40,216 @@ li {
 }
 
 
-/* ボタン
+/* 部品
 ------------------------------------------------------------------------ */
 
 .btn {
-    width: 300px;
-    height: 45px;
-    display: block;
+    width: 30rem;
+    height: 5.7rem;
     text-align: center;
-    border-radius: 34px;
-    font-size: 18px;
+    border-radius: 3.4rem;
+    font-size: 1.8rem;
     font-weight: 600;
 }
 
-/* フォント 
------------------------------------------------------------------------- */
 
-.marcellus {
+.font-marcellus {
     font-family: "Marcellus", serif;
 }
 
-.eb-garamond {
+.font-eb-garamond {
     font-family: "EB Garamond", serif;
 }
 
 
-/* メイン 
+/* ヘッダー
 ------------------------------------------------------------------------ */
 
+
 .header {
-    position: absolute;
-    top: 3%;
-    left: 53%;
-    transform: translateX(-50%);
+    background-image: url(/assets/image/mainvisual_sp.jpg);
+    background-size: 100% 45rem;
+    width: 100%;
+    height: 55.7rem;
+    padding: 2.9rem 2.3rem 0 2.3rem;
 }
 
 @media (min-width: 768px) {
     .header {
-        position: fixed;
-        top: 3.5%;
-        left: 50%;
-        transform: translateX(-50%);
+        background: url(/assets/image/mainvisual_pc.jpg) center center/cover no-repeat;
+        background-size: 100% 72rem;
+        width: 100%;
+        height: 72rem;
+        padding: 3.86rem 7.5rem 0 7.5rem;
     }
 }
 
 .header-logo {
-    width: 86%;
+    width: 13.932rem;
+    display: block;
+    margin-inline: auto;
 }
 
 @media (min-width: 768px) {
     .header-logo {
-        width: 100%;
+        width: 16.254rem;
     }
 }
 
-.main {
-    background-image: url(../image/mainVisual_sp.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 45rem;
+.header-text {
+    margin-top: 37rem;
+    padding-left: 0;
+    font-weight: 400;
+}
+
+@media (min-width: 768px) {
+    .header-text {
+        margin-top: 21.1rem;
+        padding-left: 14.8rem;
+    }
+}
+
+.header-text-up {
+    font-size: 4.1rem;
+    line-height: 1.244;
+    letter-spacing: 0.3em;
 
 }
 
 @media (min-width: 768px) {
-    .main {
-        background-image: url(../image/mainVisual_pc.jpg);
-        width: 100%;
-        height: 57rem;
+    .header-text-up {
+        font-size: 5rem;
+        line-height: 1.36;
     }
 }
 
-.main-container {
-    background-size: 100% 45rem;
-    background-position: top left;
+.header-text-down {
+    font-size: 2rem;
+    line-height: 2.35;
+    letter-spacing: 0.3em;
 }
 
 @media (min-width: 768px) {
-    .main-container {
-        max-width: 46.75rem;
-        padding: 0;
-
+    .header-text-down {
+        font-size: 2.5rem;
+        line-height: 2.0;
     }
 }
 
-@media (min-width: 1200px) {
-    .main-container {
-        max-width: 75rem;
-    }
-}
 
-.main-text {
-    position: absolute;
-    top: 48%;
-    left: 5%;
-}
 
-@media (min-width: 768px) {
-    .main-text {
-        top: 48%;
-        left: 5%;
-    }
-}
 
-.main-text-up {
-    font-size: 41px;
-}
-
-@media (min-width: 768px) {
-    .main-text-up {
-        font-size: 50px;
-    }
-}
-
-.main-text-down {
-    font-size: 20px;
-}
-
-@media (min-width: 768px) {
-    .main-text-down {
-        font-size: 25px;
-    }
-}
-
+/* カート
+------------------------------------------------------------------------ */
 
 .cart {
-    padding: 20px 10px;
-}
-
-@media (min-width: 768px) {
-    .cart {
-        padding: 25px 0;
-        margin: auto;
-    }
+    padding: 5rem 1.5rem;
 }
 
 .cart-container {
+    max-width: 100rem;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    color: #f0f4ff;
+    justify-content: center;
+    background-color: #f0f4ff;
+    gap: 1.8rem;
 }
 
 @media (min-width: 768px) {
     .cart-container {
         flex-direction: row;
+        align-items: center;
+        width: 100rem;
+        height: 14.2rem;
+        gap: 6.3rem;
     }
 }
 
 .cart-text {
     text-align: center;
+    padding-top: 1.7rem;
 }
 
-.name {
-    font-size: 18px;
+@media (min-width: 768px) {
+    .cart-text {
+        text-align: start;
+        padding-top: 0;
+    }
+}
+
+.text-name {
+    font-size: 1.8rem;
     font-weight: 600;
+    letter-spacing: 0.1em;
+    color: #111;
 }
 
 @media (min-width: 768px) {
-    .name {
-        font-size: 24px;
-        font-weight: 600;
+    .text-name {
+        font-size: 2.4rem;
     }
 }
 
-.price {
-    font-size: 14px;
+.text-price {
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    padding-top: 0;
+    color: #111;
 }
 
 @media (min-width: 768px) {
-    .price {
-        font-size: 16px;
+    .text-price {
+        font-size: 1.6rem;
+        padding-top: 0.2rem;
     }
 }
 
-.hamburger-nav-btn {
+
+/* ボタン 
+-------------------------------- */
+
+.btn-box {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    gap: 2rem
 }
 
-.btn-hero {
-    width: 350px;
-    height: 65px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    background-color: #fff;
-    color: #005bac;
-    font-size: 18px;
-    font-weight: 700;
-    border-radius: 33px;
-    transition: all 0.3s ease;
+@media (min-width: 768px) {
+    .btn-box {
+        flex-direction: row;
+        gap: 3rem;
+    }
 }
 
 .site-btn {
     background-color: #46c4db;
     color: #fff;
+    border: 2px solid #46c4db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-
+.site-btn:hover {
+    background-color: #fff;
+    color: #46c4db;
+}
 
 .buy-btn {
     background-color: #5dd5ab;
     color: #fff;
     border: 2px solid #5dd5ab;
+    margin-bottom: 3.5rem;
+}
+
+@media (min-width: 768px) {
+    .buy-btn {
+        margin-bottom: 0;
+    }
 }
 
 .buy-btn:hover {
@@ -258,31 +261,380 @@ li {
 
 
 
+/* 商品
+------------------------------------------------------------------------ */
+
+.product {
+    background: url(/assets/image/cream_sp.jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 68rem;
+    padding: 4.4rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .product {
+        background: url(/assets/image/cream_pc.jpg);
+        background-size: 100% 55rem;
+        width: 100%;
+        height: 55rem;
+        padding: 12rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .product-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.product-text-box {
+    color: #fff;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .product-text-box {
+        text-align: start;
+        margin-left: auto;
+        width: 43rem;
+        margin-right: 12rem;
+    }
+}
+
+
+.product-title-up {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .product-title-up {
+        font-size: 3.8rem;
+        font-weight: 700;
+    }
+}
+
+
+.product-title-down {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    .product-title-down {
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 1.3;
+    }
+}
+
+
+.product-text {
+    text-align: start;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.3;
+    padding-top: 1.2rem;
+}
+
+
+@media (min-width: 768px) {
+    .product-text {
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.3;
+        padding-top: 2rem;
+    }
+}
+
+
+/* お客様の声
+------------------------------------------------------------------------ */
+
+.voices {
+    padding: 4.5rem 3.6rem
+}
+
+@media (min-width: 768px) {
+    .voices {
+        padding: 7.1rem 3.5rem;
+    }
+}
+
+.voices-title {
+    text-align: center;
+    color: #000;
+}
+
+.voices-title-up {
+    font-size: 3rem;
+    font-weight: 700;
+    padding-left: 0;
+    letter-spacing: 0.05em;
+}
+
+@media (min-width: 768px) {
+    .voices-title-up {
+        font-size: 4.5rem;
+        padding-left: 0.3rem;
+    }
+}
+
+.voices-title-down {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+    padding-left: 0;
+    letter-spacing: 0.05em;
+}
+
+@media (min-width: 768px) {
+    .voices-title-down {
+        font-size: 2rem;
+        line-height: 1.1;
+        padding-left: 0.3rem;
+    }
+}
+
+
+.voices-slider {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 3.9rem 1.8rem 0;
+}
+
+@media (min-width: 768px) {
+    .voices-slider {
+        padding: 2.5rem 9rem;
+    }
+}
+
+.voices-slider-item {
+    margin: auto;
+    padding: 2.8rem 1.6rem 2.5rem;
+    background-color: #d8f7f9;
+}
+
+@media (min-width: 768px) {
+    .voices-slider-item {}
+}
+
+
+.voices-name {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #000;
+    padding-top: 0.6rem;
+}
+
+@media (min-width: 768px) {
+    .voices-name {
+        font-size: 1.5rem;
+    }
+}
+
+.voices-text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #000;
+    line-height: 2;
+    padding-top: 1.4rem;
+}
+
+@media (min-width: 768px) {
+    .voices-text {
+        font-size: 1.6rem;
+        line-height: 1.75;
+    }
+}
+
+.slick-arrow::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    width: 3.2rem;
+    height: 3.2rem;
+    top: 1.3rem;
+}
+
+@media (min-width: 768px) {
+
+    .slick-prev::before,
+    .slick-next::before {
+        width: 4.8rem;
+        height: 4.8rem;
+        top: 1rem;
+    }
+}
+
+.slick-prev::before {
+    background: url(/assets/image/arrow-left-circle-fill_sp.svg);
+    background-size: contain;
+    left: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .slick-prev::before {
+        background: url(/assets/image/arrow-left-circle-fill_pc.svg);
+        background-size: contain;
+        left: 4.8rem;
+    }
+}
+
+
+.slick-next::before {
+    background: url(/assets/image/arrow-right-circle-fill_sp.svg);
+    background-size: contain;
+    left: -1.7rem;
+}
+
+@media (min-width: 768px) {
+    .slick-next::before {
+        background: url(/assets/image/arrow-right-circle-fill_pc.svg);
+        background-size: contain;
+        left: -7.4rem;
+    }
+}
+
+
+.voices-img {
+    display: flex;
+    justify-content: center;
+    padding-left: 1rem;
+}
+
+.slick-dots {
+    bottom: -3rem;
+    width: 85%;
+}
+
+.slick-dots li {
+    width: 0.7rem;
+}
+
+.slick-dots li button:before {
+    font-size: 1rem;
+    color: #eee;
+}
+
+
+.slick-dots li.slick-active button:before {
+    color: #00afbf;
+}
+
+
+/* よくある質問
+------------------------------------------------------------------------ */
+
+.qa {
+    padding: 2rem 2rem;
+    max-width: 120rem;
+    margin: 0 auto;
+    background: linear-gradient();
+}
+
+
+
+.qa-title {
+    text-align: center;
+    color: #000;
+}
+
+.qa-title-up {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .qa-title-up {
+        font-size: 4.5rem;
+    }
+}
+
+.qa-title-down {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .qa-title-down {
+        font-size: 2rem;
+    }
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.accordion-title {
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 500;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1.6rem 1.4rem;
+}
+
+.question {
+    margin-right: 1.2rem;
+}
+
+.question-text {
+    margin-right: auto;
+    font-size: 1.5rem;
+    color: #444;
+}
+
+.toggle-icon {
+    width: 1rem;
+    height: 0.6rem;
+}
+
+
+.accordion-title.active .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    display: none;
+}
+
+.content-inner-text {
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    align-items: flex-start;
+    padding: 1.6rem 2.9rem;
+    color: #000;
+}
+
+.answer {
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-right: 1.2rem;
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* フッター
+------------------------------------------------------------------------ */
 
 
 
