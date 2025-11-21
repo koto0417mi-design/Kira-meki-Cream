@@ -145,7 +145,13 @@ li {
 ------------------------------------------------------------------------ */
 
 .cart {
-    padding: 5rem 1.5rem;
+    padding: 5rem 1.5rem 0.8rem;
+}
+
+@media (min-width: 768px) {
+    .cart {
+        padding: 5rem 1.5rem 0.9rem;
+    }
 }
 
 .cart-container {
@@ -164,7 +170,7 @@ li {
         align-items: center;
         width: 100rem;
         height: 14.2rem;
-        gap: 6.3rem;
+        gap: 6.2rem;
     }
 }
 
@@ -217,7 +223,7 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem
+    gap: 2.2rem
 }
 
 @media (min-width: 768px) {
@@ -271,14 +277,15 @@ li {
     background-size: 100%;
     width: 100%;
     height: 68rem;
-    padding: 4.4rem 1.5rem;
+    padding: 5.3rem 1.5rem;
+    margin-top: 4rem;
 }
 
 @media (min-width: 768px) {
     .product {
         background: url(/assets/image/cream_pc.jpg);
         background-size: cover;
-        background-position:center;
+        background-position: center;
         width: 100%;
         height: 55rem;
         padding: 12rem;
@@ -296,26 +303,38 @@ li {
 
 .product-text-box {
     color: #fff;
-    text-align: center;
+    line-height: 1;
 }
 
 @media (min-width: 768px) {
     .product-text-box {
-        text-align: start;
         width: 43rem;
     }
 }
 
+.product-title {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .product-title {
+        text-align: start;
+    }
+}
 
 .product-title-up {
     font-size: 3rem;
     font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1.8rem;
 }
 
 @media (min-width: 768px) {
     .product-title-up {
         font-size: 3.8rem;
         font-weight: 700;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
     }
 }
 
@@ -323,24 +342,21 @@ li {
 .product-title-down {
     font-size: 2.4rem;
     font-weight: 600;
-    line-height: 1.5;
 }
 
 @media (min-width: 768px) {
     .product-title-down {
         font-size: 2.4rem;
         font-weight: 600;
-        line-height: 1.3;
     }
 }
 
 
 .product-text {
-    text-align: start;
     font-size: 1.4rem;
     font-weight: 400;
+    margin-top: 1.9rem;
     line-height: 2.3;
-    margin-top: 1.2rem;
 }
 
 
@@ -348,8 +364,7 @@ li {
     .product-text {
         font-size: 1.4rem;
         font-weight: 400;
-        line-height: 2.29;
-        margin-top: 1.9rem;
+        margin-top: 2.1rem;
     }
 }
 
@@ -358,12 +373,12 @@ li {
 ------------------------------------------------------------------------ */
 
 .voices {
-    padding: 4.5rem 1.5rem
+    padding: 4.4rem 1.5rem 0.4rem
 }
 
 @media (min-width: 768px) {
     .voices {
-        padding: 7.1rem 3.5rem;
+        padding: 7.1rem 3.5rem 6.1rem;
     }
 }
 
@@ -380,14 +395,14 @@ li {
 .voices-title-up {
     font-size: 3rem;
     font-weight: 700;
-    padding-left: 0;
+    margin-left: 0;
     letter-spacing: 0.05em;
 }
 
 @media (min-width: 768px) {
     .voices-title-up {
         font-size: 4.5rem;
-        padding-left: 0.3rem;
+        margin-left: 0.3rem;
     }
 }
 
@@ -395,53 +410,49 @@ li {
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1;
-    padding-left: 0;
     letter-spacing: 0.05em;
+    margin: 0;
 }
 
 @media (min-width: 768px) {
     .voices-title-down {
         font-size: 2rem;
-        line-height: 1.1;
-        padding-left: 0.3rem;
+        margin-top: 0.3rem;
     }
 }
 
 .voices-slider {
     display: flex;
-}
-
-@media (min-width: 768px) {
-.voices-slider {
-    position: relative;
-    max-width: 115.8rem;
+    align-items: center;
+    max-width: 107.7rem;
     margin-inline: auto;
-}
+    margin-top: 2.5rem;
 }
 
 .slider-item {
-    margin: 3.9rem 0.8rem 0;
+    margin: 4.1rem 0.8rem 3.9rem;
 }
+
 
 @media (min-width: 768px) {
     .slider-item {
-        margin: 4.3rem -4rem 0 4.1rem;
+        margin: 2rem;
         box-sizing: border-box;
     }
 }
 
 .slider-item-inner {
-        background-color: #d8f7f9;
-    width: 28rem;
+    background-color: #d8f7f9;
+    width: 100%;
     height: 34.4rem;
 }
 
 @media (min-width: 768px) {
-.slider-item-inner{
-    background-color: #d8f7f9;
-    width: 30rem;
-    height: 38.8rem;
-}
+    .slider-item-inner {
+        background-color: #d8f7f9;
+        width: 30rem;
+        height: 38.8rem;
+    }
 }
 
 .voices-name {
@@ -449,7 +460,7 @@ li {
     font-size: 1.4rem;
     font-weight: 400;
     color: #000;
-  margin-top: 0.6rem;
+    margin-top: 0.6rem;
 }
 
 @media (min-width: 768px) {
@@ -481,25 +492,48 @@ li {
 }
 
 @media (min-width: 768px) {
-.voices-img {
-    padding: 4.1rem 0 0 0rem;
-}
+    .voices-img {
+        padding: 4.1rem 0 0 0rem;
+    }
 }
 
 .prev-arrow,
 .next-arrow {
     position: relative;
-    top: 2rem;
-}
-
-.slick-dots {
-    bottom: -3rem;
+    cursor: pointer;
+    width: 3.2rem;
+    height: 3.2rem;
 }
 
 @media (min-width: 768px) {
-.slick-dots {
-    bottom: -3.8rem;
+
+    .prev-arrow,
+    .next-arrow {
+        width: 4.8rem;
+        height: 4.8rem;
+    }
 }
+
+@media (min-width: 768px) {
+    .prev-arrow {
+        left: -4rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .next-arrow {
+        right: -4rem;
+    }
+}
+
+.slick-dots {
+    bottom: 1.2rem;
+}
+
+@media (min-width: 768px) {
+    .slick-dots {
+        bottom: -1.8rem;
+    }
 }
 
 
@@ -522,26 +556,39 @@ li {
 ------------------------------------------------------------------------ */
 
 .qa {
-    padding: 2rem 1.5rem;
-    max-width: 120rem;
-    margin: 0 auto;
+    padding: 3.8rem 1.5rem 3.3rem;
     background: linear-gradient(to right, #f4ffe8, #c6f0fe);
-
-
 }
 
+@media (min-width: 768px) {
+    .qa {
+        padding: 4.8rem 4rem 3.8rem;
+    }
+}
+
+.qa-container {
+    max-width: 60rem;
+    margin: 0 auto;
+}
 
 
 .qa-title {
     text-align: center;
     color: #000;
+    line-height: 1;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .qa-title {
+        margin-left: 0.2rem;
+    }
 }
 
 .qa-title-up {
     font-size: 3rem;
     font-weight: 700;
     letter-spacing: 0.04em;
-    line-height: 2.2;
 }
 
 @media (min-width: 768px) {
@@ -554,17 +601,24 @@ li {
     font-size: 1.6rem;
     font-weight: 600;
     letter-spacing: 0.05em;
-    line-height: 0.2;
+    margin-top: 1.2rem;
 }
 
 @media (min-width: 768px) {
     .qa-title-down {
         font-size: 2rem;
+        margin-top: 1.9rem;
     }
 }
 
 .qa-item {
-    margin: 4.5rem 0 0 0 ;
+    margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .qa-item {
+        margin-top: 4.4rem;
+    }
 }
 
 .accordion {
@@ -579,31 +633,51 @@ li {
     font-weight: 500;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 1.6rem 1.6rem 0.1rem;
-    line-height: 2;
+    padding: 1.6rem;
 }
 
+@media (min-width: 768px) {
+    .accordion-title {
+        padding: 2.1rem 2rem 2.1rem 2.4rem;
+    }
+}
 
 .accordion-list {
     background-color: #fff;
-    padding-bottom: 2rem;
 }
 
 .question {
     margin-right: 1.3rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #000;
+}
+
+@media (min-width: 768px) {
+    .question {
+        margin-right: 1.7rem;
+        font-size: 1.8rem;
+    }
 }
 
 .question-text {
     margin-right: auto;
     font-size: 1.5rem;
     color: #444;
+    line-height: 1.9;
 }
 
 .toggle-icon {
     width: 2rem;
     height: 0.7rem;
+    margin-top: 1.4rem;
 }
 
+@media (min-width: 768px) {
+    .toggle-icon {
+        margin-top: 1.1rem;
+    }
+}
 
 .accordion-title.active .toggle-icon {
     transform: rotate(180deg);
@@ -614,14 +688,20 @@ li {
 }
 
 .content-inner {
- display: flex;
- font-size: 1.5rem;
- font-weight: 500;
- align-items: flex-start;
- justify-content: space-between;
- padding: 0.9rem 1.6rem;
- line-height: 1.87;
- color: #000;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 500;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0.1rem 1.6rem 2.5rem;
+    line-height: 1.87;
+    color: #000;
+}
+
+@media (min-width: 768px) {
+    .content-inner {
+        padding: 0.2rem 2.7rem 2rem 2.4rem;
+    }
 }
 
 .answer {
@@ -631,24 +711,143 @@ li {
     margin-right: 1.4rem;
 }
 
+@media (min-width: 768px) {
+    .answer {
+        font-size: 1.8rem;
+        margin-right: 1.7rem;
+    }
+}
 
 
+/* スクロールボタン
+------------------------------------------------------------------------ */
+
+
+.scroll-top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1.1rem;
+    position: sticky;
+    bottom: 0;
+    left: 33.4rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: #0071ce;
+    cursor: pointer;
+    border: 0.2rem solid #0071ce;
+}
+
+@media (min-width: 768px) {
+    .scroll-top {
+        left: 131rem;
+    }
+}
+
+.scroll-top-icon {
+    color: #fff;
+    width: 1.4rem;
+    height: 1.6rem;
+}
+
+.scroll-top:hover {
+    background-color: #fff;
+}
+
+.scroll-top:hover .scroll-top-icon {
+    color: #0071ce;
+}
 
 /* フッター
 ------------------------------------------------------------------------ */
 
 
 
-.scroll-top {
-    display: flex;
-    justify-content: flex-end;
+.footer {
+    background-color: #0071ce;
+    padding: 3.1rem 1.5rem;
 }
 
-.scroll-top {
+@media (min-width: 768px) {
+    .footer {
+        padding: 3.5rem 1.5rem 4rem;
+    }
+}
+
+.footer-container {
+    max-width: 90rem;
+    margin-inline: auto;
     display: flex;
-    justify-content: flex-end;
-    padding-right: 27px;
-    position: sticky;
-    bottom: 10px;
-    left: 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        max-width: 120rem;
+        flex-direction: row;
+    }
+}
+
+.footer-logo {
+    width: 16.254rem;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .footer-logo {
+        width: 18.576rem;
+        margin-left: 3.5rem;
+        margin-right: 20.7rem;
+    }
+}
+
+.footer-nav {
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .footer-nav {
+        margin-top: 0.2rem;
+    }
+}
+
+.footer-nav-list {
+    display: flex;
+    gap: 3rem;
+}
+
+@media (min-width: 768px) {
+    .footer-nav-list {
+        gap: 3.2rem;
+    }
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .nav-link {
+        font-size: 1.4rem;
+    }
+}
+
+.footer-uppercase {
+    margin-top: 2.2rem;
+    margin-left: 0;
+    color: #fff;
+    width: 21.945rem;
+    font-size: 109%;
+}
+
+@media (min-width: 768px) {
+    .footer-uppercase {
+        width: 23.94rem;
+        margin-top: 1rem;
+        margin-left: 15.6rem;
+        font-size: 119%;
+    }
 }

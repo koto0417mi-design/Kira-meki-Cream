@@ -5,6 +5,7 @@ $('.voices-slider').slick({
   nextArrow: '<img src="/assets/image/arrow-right-circle-fill_pc.svg" class="slide-arrow next-arrow">',
   dots: true,
   infinite: false,
+  variableWidth:true,
   slidesToShow: 3,
   slidesToScroll: 3,
 
