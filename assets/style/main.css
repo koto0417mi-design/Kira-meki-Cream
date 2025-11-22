@@ -333,7 +333,7 @@ li {
     .product-title-up {
         font-size: 3.8rem;
         font-weight: 700;
-        margin-top: 1.5rem;
+        margin-top: 1.4rem;
         margin-bottom: 2rem;
     }
 }
@@ -364,7 +364,7 @@ li {
     .product-text {
         font-size: 1.4rem;
         font-weight: 400;
-        margin-top: 2.1rem;
+        margin-top: 2.2rem;
     }
 }
 
@@ -373,7 +373,7 @@ li {
 ------------------------------------------------------------------------ */
 
 .voices {
-    padding: 4.4rem 1.5rem 0.4rem
+    padding: 4.4rem 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -390,6 +390,13 @@ li {
 .voices-title {
     text-align: center;
     color: #000;
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+    .voices-title {
+        margin-bottom: 4.3rem;
+    }
 }
 
 .voices-title-up {
@@ -417,40 +424,36 @@ li {
 @media (min-width: 768px) {
     .voices-title-down {
         font-size: 2rem;
-        margin-top: 0.3rem;
+        margin-top: 0.2rem;
+        margin-left: 0.2rem;
     }
 }
 
-.voices-slider {
+.voices-slider .slick-slide {
+    box-sizing: border-box;
+    margin: 0;
+    padding-inline: 2rem;
+    min-width: 0;
     display: flex;
-    align-items: center;
-    max-width: 107.7rem;
-    margin-inline: auto;
-    margin-top: 2.5rem;
-}
-
-.slider-item {
-    margin: 4.1rem 0.8rem 3.9rem;
-}
-
-
-@media (min-width: 768px) {
-    .slider-item {
-        margin: 2rem;
-        box-sizing: border-box;
-    }
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .slider-item-inner {
-    background-color: #d8f7f9;
+    box-sizing: border-box;
     width: 100%;
+    max-width: 28rem;
     height: 34.4rem;
+    padding: 2.7rem 1.5rem 1.3rem 1.5rem;
+    background-color: #d8f7f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media (min-width: 768px) {
     .slider-item-inner {
-        background-color: #d8f7f9;
-        width: 30rem;
+        max-width: 30rem;
         height: 38.8rem;
     }
 }
@@ -470,39 +473,43 @@ li {
 }
 
 .voices-text {
-    padding: 1.5rem;
     font-size: 1.4rem;
     font-weight: 400;
     color: #000;
     line-height: 2;
+    margin-top: 1.4rem;
 }
 
 @media (min-width: 768px) {
     .voices-text {
-        padding: 1rem 2rem 1rem 1.6rem;
         font-size: 1.6rem;
         line-height: 1.75;
+        margin-top: 1.2rem;
     }
 }
 
 .voices-img {
     display: flex;
     justify-content: center;
-    padding: 2.7rem 0 0 1rem;
+    margin-left: 1rem;
 }
 
 @media (min-width: 768px) {
     .voices-img {
-        padding: 4.1rem 0 0 0rem;
+        margin-left: 0;
     }
 }
 
 .prev-arrow,
 .next-arrow {
-    position: relative;
+    position: absolute;
     cursor: pointer;
     width: 3.2rem;
     height: 3.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
 }
 
 @media (min-width: 768px) {
@@ -514,20 +521,28 @@ li {
     }
 }
 
+.prev-arrow {
+    left: 0.1rem;
+}
+
 @media (min-width: 768px) {
     .prev-arrow {
-        left: -4rem;
+        left: 2.2rem;
     }
+}
+
+.next-arrow {
+    right: 0.1rem;
 }
 
 @media (min-width: 768px) {
     .next-arrow {
-        right: -4rem;
+        right: 2.2rem;
     }
 }
 
 .slick-dots {
-    bottom: 1.2rem;
+    bottom: -3rem;
 }
 
 @media (min-width: 768px) {
@@ -535,7 +550,6 @@ li {
         bottom: -1.8rem;
     }
 }
-
 
 .slick-dots li {
     margin: -0.14rem;
@@ -721,27 +735,36 @@ li {
 
 /* スクロールボタン
 ------------------------------------------------------------------------ */
-
-
 .scroll-top {
+    max-width: 120rem;
+    margin-inline: auto;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    padding-right: 1.1rem;
     position: sticky;
-    bottom: 0;
-    left: 33.4rem;
+    margin-right: 1.6rem;
+}
+
+
+@media (min-width: 768px) {
+    .scroll-top {
+        max-width: 120rem;
+        margin-inline: auto;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 0;
+    }
+}
+
+.scroll-top-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 4rem;
     height: 4rem;
     background-color: #0071ce;
     cursor: pointer;
     border: 0.2rem solid #0071ce;
-}
-
-@media (min-width: 768px) {
-    .scroll-top {
-        left: 131rem;
-    }
+    display: none;
 }
 
 .scroll-top-icon {
@@ -750,11 +773,13 @@ li {
     height: 1.6rem;
 }
 
-.scroll-top:hover {
+.scroll-top-btn:hover,
+.scroll-top-btn:focus {
     background-color: #fff;
+    outline: none;
 }
 
-.scroll-top:hover .scroll-top-icon {
+.scroll-top-btn:hover .scroll-top-icon {
     color: #0071ce;
 }
 
