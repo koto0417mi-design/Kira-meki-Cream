@@ -43,8 +43,4 @@ $(window).scroll(function () {
     pageTop.fadeOut(300);
   }
 });
-
-pageTop.click(function () {
-  $("html, body").animate({ scrollTop: 0 }, 500);
-});
 });

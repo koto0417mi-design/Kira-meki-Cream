@@ -145,13 +145,7 @@ li {
 ------------------------------------------------------------------------ */
 
 .cart {
-    padding: 5rem 1.5rem 0.8rem;
-}
-
-@media (min-width: 768px) {
-    .cart {
-        padding: 5rem 1.5rem 0.9rem;
-    }
+    padding: 5rem 1.5rem 0.9rem;
 }
 
 .cart-container {
@@ -176,13 +170,13 @@ li {
 
 .cart-text {
     text-align: center;
-    padding-top: 1.7rem;
+    margin-top: 1.7rem;
 }
 
 @media (min-width: 768px) {
     .cart-text {
         text-align: start;
-        padding-top: 0;
+        margin-top: 0;
     }
 }
 
@@ -355,7 +349,7 @@ li {
 .product-text {
     font-size: 1.4rem;
     font-weight: 400;
-    margin-top: 1.9rem;
+    margin-top: 1.8rem;
     line-height: 2.3;
 }
 
@@ -441,6 +435,17 @@ li {
 }
 }
 
+.voices-slider {
+    max-width: 32rem;
+    margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+.voices-slider {
+    max-width: 102rem;
+    margin-inline: auto;
+}
+}
 
 .slider-item-inner {
     box-sizing: border-box;
@@ -467,12 +472,13 @@ li {
     font-size: 1.4rem;
     font-weight: 400;
     color: #000;
-    margin-top: 0.6rem;
+    margin: 0.6rem 0 0 0;
 }
 
 @media (min-width: 768px) {
     .voices-name {
         font-size: 1.5rem;
+        margin: 0 0.2rem 0 0;
     }
 }
 
@@ -496,11 +502,13 @@ li {
     display: flex;
     justify-content: center;
     margin-left: 1rem;
+    width: 8rem;
 }
 
 @media (min-width: 768px) {
     .voices-img {
         margin-left: 0;
+        width: 10rem;
     }
 }
 
@@ -526,22 +534,22 @@ li {
 }
 
 .prev-arrow {
-    left: 0.1rem;
+    left: -1.9rem;
 }
 
 @media (min-width: 768px) {
     .prev-arrow {
-        left: -7.8rem;
+        left: -6.8rem;
     }
 }
 
 .next-arrow {
-    right: 0.1rem;
+    right: -1.9rem;
 }
 
 @media (min-width: 768px) {
     .next-arrow {
-        right: -7.8rem;
+        right: -6.8rem;
     }
 }
 
@@ -741,20 +749,20 @@ li {
 /* スクロールボタン
 ------------------------------------------------------------------------ */
 .scroll-top {
-    max-width: 120rem;
+    max-width: 36rem;
     margin-inline: auto;
-    position: fixed;
-    bottom: 16.5rem;
-    right: 1.5rem;
+    position: sticky;
+    display: flex;
+    justify-content: flex-end;
+    right: 0;
+    left: 0;
+    bottom: 3rem;
 }
 
 
 @media (min-width: 768px) {
     .scroll-top {
         max-width: 120rem;
-        margin-inline: auto;
-        bottom: 10.6rem;
-        right: 15rem;
     }
 }
 
@@ -791,14 +799,13 @@ li {
 
 
 .footer {
-    margin-top: 4.1rem;
     background-color: #0071ce;
-    padding: 3.1rem 1.5rem;
+    padding: 3rem 1.5rem;
 }
 
 @media (min-width: 768px) {
     .footer {
-        padding: 3.5rem 1.5rem 4rem;
+        padding: 3.6rem 18.3rem 4rem 5rem;
     }
 }
 
@@ -825,8 +832,7 @@ li {
 @media (min-width: 768px) {
     .footer-logo {
         width: 18.576rem;
-        margin-left: 3.5rem;
-        margin-right: 20.7rem;
+        margin-right: auto;
     }
 }
 
@@ -836,7 +842,7 @@ li {
 
 @media (min-width: 768px) {
     .footer-nav {
-        margin-top: 0.2rem;
+        margin-top: 0.3rem;
     }
 }
 
@@ -867,15 +873,13 @@ li {
     margin-top: 2.2rem;
     margin-left: 0;
     color: #fff;
-    width: 21.945rem;
-    font-size: 109%;
+    font-size: 1.1rem
 }
 
 @media (min-width: 768px) {
     .footer-uppercase {
-        width: 23.94rem;
-        margin-top: 1rem;
-        margin-left: 15.6rem;
-        font-size: 119%;
+        margin-top: 0.8rem;
+        margin-left: 15.4rem;
+        font-size: 1.2rem;
     }
 }
