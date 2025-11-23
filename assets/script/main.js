@@ -38,13 +38,13 @@ const pageTop = $(".scroll-top-btn");
 
 $(window).scroll(function () {
   if ($(this).scrollTop() > 80) {
-    $(".scroll-top-btn").fadeIn(300).css("display","flex");
+    pageTop.fadeIn(300).css("display","flex");
   } else {
-    $(".scroll-top-btn").fadeOut(300);
+    pageTop.fadeOut(300);
   }
 });
 
-$(".scroll-top-btn").click(function () {
+pageTop.click(function () {
   $("html, body").animate({ scrollTop: 0 }, 500);
 });
 });

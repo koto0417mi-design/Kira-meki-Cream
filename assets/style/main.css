@@ -378,7 +378,7 @@ li {
 
 @media (min-width: 768px) {
     .voices {
-        padding: 7.1rem 3.5rem 6.1rem;
+        padding: 7.1rem 3.5rem 8.4rem;
     }
 }
 
@@ -431,13 +431,16 @@ li {
 
 .voices-slider .slick-slide {
     box-sizing: border-box;
-    margin: 0;
-    padding-inline: 2rem;
-    min-width: 0;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
 }
+
+@media (min-width: 768px) {
+.voices-slider .slick-slide {
+    padding-inline: 2rem;
+}
+}
+
 
 .slider-item-inner {
     box-sizing: border-box;
@@ -455,6 +458,7 @@ li {
     .slider-item-inner {
         max-width: 30rem;
         height: 38.8rem;
+        padding: 4rem 1.5rem 1.3rem 1.7rem;
     }
 }
 
@@ -527,7 +531,7 @@ li {
 
 @media (min-width: 768px) {
     .prev-arrow {
-        left: 2.2rem;
+        left: -7.8rem;
     }
 }
 
@@ -537,7 +541,7 @@ li {
 
 @media (min-width: 768px) {
     .next-arrow {
-        right: 2.2rem;
+        right: -7.8rem;
     }
 }
 
@@ -547,7 +551,7 @@ li {
 
 @media (min-width: 768px) {
     .slick-dots {
-        bottom: -1.8rem;
+        bottom: -3.9rem;
     }
 }
 
@@ -631,7 +635,7 @@ li {
 
 @media (min-width: 768px) {
     .qa-item {
-        margin-top: 4.4rem;
+        margin-top: 4.2rem;
     }
 }
 
@@ -652,7 +656,7 @@ li {
 
 @media (min-width: 768px) {
     .accordion-title {
-        padding: 2.1rem 2rem 2.1rem 2.4rem;
+        padding: 2.2rem 2rem 2.2rem 2.4rem;
     }
 }
 
@@ -678,7 +682,7 @@ li {
     margin-right: auto;
     font-size: 1.5rem;
     color: #444;
-    line-height: 1.9;
+    line-height: 1.89;
 }
 
 .toggle-icon {
@@ -707,9 +711,10 @@ li {
     font-weight: 500;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 0.1rem 1.6rem 2.5rem;
+    padding: 0.5rem 1.6rem 2.9rem;
     line-height: 1.87;
     color: #000;
+    margin-top: -0.8rem;
 }
 
 @media (min-width: 768px) {
@@ -738,10 +743,9 @@ li {
 .scroll-top {
     max-width: 120rem;
     margin-inline: auto;
-    display: flex;
-    justify-content: flex-end;
-    position: sticky;
-    margin-right: 1.6rem;
+    position: fixed;
+    bottom: 16.5rem;
+    right: 1.5rem;
 }
 
 
@@ -749,14 +753,12 @@ li {
     .scroll-top {
         max-width: 120rem;
         margin-inline: auto;
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 0;
+        bottom: 10.6rem;
+        right: 15rem;
     }
 }
 
 .scroll-top-btn {
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 4rem;
@@ -789,6 +791,7 @@ li {
 
 
 .footer {
+    margin-top: 4.1rem;
     background-color: #0071ce;
     padding: 3.1rem 1.5rem;
 }
