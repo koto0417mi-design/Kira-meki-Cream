@@ -1,8 +1,8 @@
 // Slick //
 $('.voices-slider').slick({
   arrows: true,
-  prevArrow: '<img src="/assets/image/arrow-left-circle-fill_pc.svg" class="slide-arrow prev-arrow">',
-  nextArrow: '<img src="/assets/image/arrow-right-circle-fill_pc.svg" class="slide-arrow next-arrow">',
+  prevArrow: '<img src="/assets/image/arrow_left_circle_fill.svg" class="slide-arrow prev-arrow" alt="戻る">',
+  nextArrow: '<img src="/assets/image/arrow_right_circle_fill.svg" class="slide-arrow next-arrow" alt="進む">',
   dots: true,
   infinite: false,
   variableWidth:false,
@@ -17,8 +17,6 @@ $('.voices-slider').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: true,
-      prevArrow: '<img src="/assets/image/arrow-left-circle-fill_sp.svg" class="slide-arrow prev-arrow">',
-      nextArrow: '<img src="/assets/image/arrow-right-circle-fill_sp.svg" class="slide-arrow next-arrow">',
       dots: true
     }
   }]

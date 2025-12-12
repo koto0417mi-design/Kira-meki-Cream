@@ -31,9 +31,12 @@
     <header class="header">
         <div class="header-container">
             <img class="header-logo" src="/assets/image/header_logo.svg" alt="Kira-meki">
-            <h1 class="header-text">
-                <p class="header-text-up font-marcellus">Kirameki<br>Cream</p>
-                <p class="header-text-down">肌のうるおい、煌めく。</p>
+            <h1 class="header-title">
+                <span class="header-main font-marcellus">
+                    <span class="brand-1">Kirameki</span>
+                    <span class="brand-2">Cream</span>
+                </span>
+                <span class="header-sub">肌のうるおい、煌めく。</span>
             </h1>
         </div>
     </header>
@@ -81,8 +84,8 @@
                     <div class="slider-item">
                         <div class="slider-item-inner">
                             <picture class="voices-img">
-                                <source media="(min-width: 768px)" srcset="/assets/image/a_pc_01.jpg" alt="">
-                                <img src="/assets/image/a_sp_01.jpg" alt="">
+                                <source media="(min-width: 768px)" srcset="/assets/image/voice_pc_01.jpg">
+                                <img src="/assets/image/voice_sp_01.jpg" alt="">
                             </picture>
                             <p class="voices-name">Aさん</p>
                             <p class="voices-text">
@@ -94,8 +97,8 @@
                     <div class="slider-item">
                         <div class="slider-item-inner">
                             <picture class="voices-img">
-                                <source media="(min-width: 768px)" srcset="/assets/image/b_pc_02.jpg" alt="">
-                                <img src="/assets/image/b_sp_02.jpg" alt="">
+                                <source media="(min-width: 768px)" srcset="/assets/image/voice_pc_02.jpg">
+                                <img src="/assets/image/voice_sp_02.jpg" alt="">
                             </picture>
                             <p class="voices-name">Bさん</p>
                             <p class="voices-text">
@@ -107,8 +110,8 @@
                     <div class="slider-item">
                         <div class="slider-item-inner">
                             <picture class="voices-img">
-                                <source media="(min-width: 768px)" srcset="/assets/image/c_pc_03.jpg" alt="">
-                                <img src="/assets/image/c_sp_03.jpg" alt="">
+                                <source media="(min-width: 768px)" srcset="/assets/image/voice_pc_03.jpg">
+                                <img src="/assets/image/voice_sp_03.jpg" alt="">
                             </picture>
                             <p class="voices-name">Cさん</p>
                             <p class="voices-text">
@@ -120,8 +123,8 @@
                     <div class="slider-item">
                         <div class="slider-item-inner">
                             <picture class="voices-img">
-                                <source media="(min-width: 768px)" srcset="/assets/image/d_pc_04.jpg" alt="">
-                                <img src="/assets/image/d_sp_04.jpg" alt="">
+                                <source media="(min-width: 768px)" srcset="/assets/image/voice_pc_04.jpg" alt="">
+                                <img src="/assets/image/voice_sp_04.jpg" alt="">
                             </picture>
                             <p class="voices-name">Dさん</p>
                             <p class="voices-text">
@@ -133,8 +136,8 @@
                     <div class="slider-item">
                         <div class="slider-item-inner">
                             <picture class="voices-img">
-                                <source media="(min-width: 768px)" srcset="/assets/image/e_pc_05.jpg" alt="">
-                                <img src="/assets/image/e_sp_05.jpg" alt="">
+                                <source media="(min-width: 768px)" srcset="/assets/image/voice_pc_05.jpg">
+                                <img src="/assets/image/voice_sp_05.jpg" alt="">
                             </picture>
                             <p class="voices-name">Eさん</p>
                             <p class="voices-text">
@@ -146,8 +149,8 @@
                     <div class="slider-item">
                         <div class="slider-item-inner">
                             <picture class="voices-img">
-                                <source media="(min-width: 768px)" srcset="/assets/image/f_pc_06.jpg" alt="">
-                                <img src="/assets/image/f_sp_06.jpg" alt="">
+                                <source media="(min-width: 768px)" srcset="/assets/image/voice_pc_06.jpg">
+                                <img src="/assets/image/voice_sp_06.jpg" alt="">
                             </picture>
                             <p class="voices-name">Fさん</p>
                             <p class="voices-text">
@@ -278,9 +281,7 @@
 
     <div class="scroll-top">
         <a class="scroll-top-btn" href="#">
-            <svg class="scroll-top-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="15.999" viewBox="0 0 14 15.999"><path id="arrow-up-short" d="M11.5,20a1,1,0,0,0,1-1V7.414l4.291,4.293a1,1,0,1,0,1.416-1.416l-6-6a1,1,0,0,0-1.416,0l-6,6a1,1,0,1,0,1.416,1.416L10.5,7.414V19A1,1,0,0,0,11.5,20Z" transform="translate(-4.499 -3.999)" fill="currentColor" fill-rule="evenodd"/>
-</svg>
-</a>
+        </a>
     </div>
 
     <footer class="footer">
@@ -288,11 +289,17 @@
             <img class="footer-logo" src="/assets/image/footer_logo.svg" alt="Kira-meki">
 
             <div class="footer-nav">
-                <nav class="footer-nav-list">
-                    <a href="/company/" class="nav-link">会社概要</a>
-                    <a href="/privacy-policy/" class="nav-link">個人情報保護ポリシー</a>
-                    <a href="/contact/" class="nav-link">お問い合わせ</a>
-                </nav>
+               <ul class="footer-nav-list">
+        <li class="footer-nav-item">
+            <a class="footer-nav-link" href="/company/">会社概要</a>
+        </li>
+        <li class="footer-nav-item">
+            <a class="footer-nav-link" href="/privacy-policy/">個人情報保護ポリシー</a>
+        </li>
+        <li class="footer-nav-item">
+            <a class="footer-nav-link" href="/contact/">お問い合わせ</a>
+        </li>
+    </ul>
             </div>
 
             <small class="footer-uppercase">© 2023 Kira-meki Inc. All rights reserved.</small>

@@ -100,18 +100,18 @@ li {
     }
 }
 
-.header-text {
+.header-title {
     margin-top: 37rem;
     font-weight: 400;
 }
 
 @media (min-width: 768px) {
-    .header-text {
+    .header-title {
         margin-top: 21.1rem;
     }
 }
 
-.header-text-up {
+.header-main {
     font-size: 4.1rem;
     line-height: 1.244;
     letter-spacing: 0.3em;
@@ -119,20 +119,26 @@ li {
 }
 
 @media (min-width: 768px) {
-    .header-text-up {
+    .header-main {
         font-size: 5rem;
         line-height: 1.36;
     }
 }
 
-.header-text-down {
+.brand-1 {
+    display: block;
+}
+
+
+.header-sub {
+    display: block;
     font-size: 2rem;
     line-height: 2.35;
     letter-spacing: 0.3em;
 }
 
 @media (min-width: 768px) {
-    .header-text-down {
+    .header-sub {
         font-size: 2.5rem;
         line-height: 2.0;
     }
@@ -478,7 +484,7 @@ li {
 @media (min-width: 768px) {
     .voices-name {
         font-size: 1.5rem;
-        margin: 0 0.2rem 0 0;
+        margin: 0.6rem 0.2rem 0 0;
     }
 }
 
@@ -554,24 +560,26 @@ li {
 }
 
 .slick-dots {
-    bottom: -3rem;
+    bottom: -3rem
 }
 
 @media (min-width: 768px) {
     .slick-dots {
-        bottom: -3.9rem;
+        bottom: -4rem;
     }
 }
 
 .slick-dots li {
-    margin: -0.14rem;
+    width: 1.7rem;
+    height: 2rem;
+        color: #eee;
+        margin: 0;
+
 }
 
 .slick-dots li button:before {
     font-size: 1rem;
-    color: #efefef;
 }
-
 
 .slick-dots li.slick-active button:before {
     color: #00afbf;
@@ -653,6 +661,12 @@ li {
     gap: 2rem;
 }
 
+@media (min-width: 768px) {
+.accordion {
+    gap: 2.4rem;
+}
+}
+
 .accordion-title {
     display: flex;
     font-size: 1.6rem;
@@ -664,7 +678,7 @@ li {
 
 @media (min-width: 768px) {
     .accordion-title {
-        padding: 2.2rem 2rem 2.2rem 2.4rem;
+        padding: 2rem 2.5rem 2rem 2.4rem;
     }
 }
 
@@ -688,9 +702,19 @@ li {
 
 .question-text {
     margin-right: auto;
+    margin-top: 0;
     font-size: 1.5rem;
     color: #444;
     line-height: 1.89;
+}
+
+@media (min-width: 768px) {
+.question-text {
+    margin-top: 0.7rem;
+    font-size: 1.5rem;
+    color: #444;
+    line-height: 1.5;
+}
 }
 
 .toggle-icon {
@@ -701,7 +725,8 @@ li {
 
 @media (min-width: 768px) {
     .toggle-icon {
-        margin-top: 1.1rem;
+    width: 1.2rem;
+    height: 0.774rem;
     }
 }
 
@@ -727,7 +752,7 @@ li {
 
 @media (min-width: 768px) {
     .content-inner {
-        padding: 0.2rem 2.7rem 2rem 2.4rem;
+        padding: 0.5rem 2.7rem 2rem 2.4rem;
     }
 }
 
@@ -767,31 +792,25 @@ li {
 }
 
 .scroll-top-btn {
-    justify-content: center;
-    align-items: center;
     width: 4rem;
     height: 4rem;
     background-color: #0071ce;
     cursor: pointer;
     border: 0.2rem solid #0071ce;
+    background-image: url("/assets/image/arrow_up_short_white.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.4rem 1.6rem;
     display: none;
 }
 
-.scroll-top-icon {
-    color: #fff;
-    width: 1.4rem;
-    height: 1.6rem;
-}
-
-.scroll-top-btn:hover,
-.scroll-top-btn:focus {
+.scroll-top-btn:hover {
     background-color: #fff;
-    outline: none;
+    border: 0.2rem solid #0071ce;
+    background-image: url("/assets/image/arrow_up_short_blue.svg");
 }
 
-.scroll-top-btn:hover .scroll-top-icon {
-    color: #0071ce;
-}
+
 
 /* フッター
 ------------------------------------------------------------------------ */
@@ -800,7 +819,7 @@ li {
 
 .footer {
     background-color: #0071ce;
-    padding: 3rem 1.5rem;
+    padding: 3rem 1.5rem 2.2rem;
 }
 
 @media (min-width: 768px) {
@@ -819,8 +838,9 @@ li {
 
 @media (min-width: 768px) {
     .footer-container {
-        max-width: 120rem;
+        max-width: 150rem;
         flex-direction: row;
+        justify-content: space-between;
     }
 }
 
@@ -832,17 +852,17 @@ li {
 @media (min-width: 768px) {
     .footer-logo {
         width: 18.576rem;
-        margin-right: auto;
+        margin-left: 13.4rem;
     }
 }
 
 .footer-nav {
-    margin-top: 3rem;
+    margin: 3rem 0 0 0 ;
 }
 
 @media (min-width: 768px) {
     .footer-nav {
-        margin-top: 0.3rem;
+        margin: 0.5rem 0 0 5.4rem;
     }
 }
 
@@ -857,21 +877,20 @@ li {
     }
 }
 
-.nav-link {
+.footer-nav-link {
     font-size: 1.2rem;
     font-weight: 400;
     color: #fff;
 }
 
 @media (min-width: 768px) {
-    .nav-link {
+    .footer-nav-link {
         font-size: 1.4rem;
     }
 }
 
 .footer-uppercase {
     margin-top: 2.2rem;
-    margin-left: 0;
     color: #fff;
     font-size: 1.1rem
 }
@@ -879,7 +898,6 @@ li {
 @media (min-width: 768px) {
     .footer-uppercase {
         margin-top: 0.8rem;
-        margin-left: 15.4rem;
         font-size: 1.2rem;
     }
 }
