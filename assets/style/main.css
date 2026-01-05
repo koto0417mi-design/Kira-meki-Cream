@@ -304,21 +304,26 @@ li {
 .product-text-box {
     color: #fff;
     line-height: 1;
+    margin-top: 0;
 }
 
 @media (min-width: 768px) {
     .product-text-box {
+        margin-top: 0.6rem;
         width: 43rem;
     }
 }
 
 .product-title {
     text-align: center;
+    line-height: 1;
+    display: grid;
 }
 
 @media (min-width: 768px) {
     .product-title {
         text-align: start;
+        line-height: 1.9;
     }
 }
 
@@ -327,14 +332,15 @@ li {
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 1.8rem;
+    line-height: 1;
 }
 
 @media (min-width: 768px) {
     .product-title-up {
         font-size: 3.8rem;
         font-weight: 700;
-        margin-top: 1.4rem;
         margin-bottom: 2rem;
+        line-height: 1.4;
     }
 }
 
@@ -364,7 +370,7 @@ li {
     .product-text {
         font-size: 1.4rem;
         font-weight: 400;
-        margin-top: 2.2rem;
+        margin-top: 1.2rem;
     }
 }
 
@@ -391,11 +397,13 @@ li {
     text-align: center;
     color: #000;
     margin-bottom: 4rem;
+    display: grid;
 }
 
 @media (min-width: 768px) {
     .voices-title {
         margin-bottom: 4.3rem;
+        display: grid;
     }
 }
 
@@ -611,11 +619,13 @@ li {
     color: #000;
     line-height: 1;
     margin: 0 0 4rem 0;
+    display: grid;
 }
 
 @media (min-width: 768px) {
     .qa-title {
         margin: 0 0 4.2rem 0.2rem;
+        display: grid;
     }
 }
 
